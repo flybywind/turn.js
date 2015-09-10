@@ -1855,6 +1855,7 @@ cla = function(that, methods, args) {
 		throw args[0] + ' is an invalid value';
 };
 
+// 把以下方法加入jQuery的prototype，成为jQuery对象的方法。this指向jQuery对象
 $.extend($.fn, {
 
 	flip: function(req, opts) {
